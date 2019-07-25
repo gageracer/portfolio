@@ -29,7 +29,7 @@ function changeLang(){
 
     let j = 0;
     
-    for(let i = 1; obj[0].childNodes.length > i; i+=2){
+    for(let i = 1; obj[0].childNodes[1].childNodes.length > i; i+=2){
         if(obj[0].childNodes[1].childNodes[i].childNodes[3].innerText == menuText[j][0]){
             obj[0].childNodes[1].childNodes[i].childNodes[3].innerText = menuText[j][1];
         }
