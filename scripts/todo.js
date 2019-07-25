@@ -30,7 +30,7 @@ function add(str){
 
 function getToDo(str){
     // console.log("inside getTODO: "+ str);
-    if( localStorage.getItem(str) ){return JSON.parse(localStorage.getItem(str)); }
+    if( localStorage.getItem(str) ){return JSON.parse(localStorage.getItem(str));}
     else{ return new Array;}
 }
 
