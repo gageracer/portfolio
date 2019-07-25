@@ -1,0 +1,440 @@
+:root{
+  --text-font: monospace;
+}
+
+
+
+body {
+  font-family: var(--text-font);
+  margin: 0px;
+}
+html,body{
+  scroll-behavior: smooth;
+}
+#first,#second,#third,#fourth{
+  min-width: auto;
+  min-height: 100vh;
+}
+
+#second,#third,#fourth{
+  display: none;
+}
+
+#lang{
+  color: red;
+  background-color: rgba(236, 186, 229, 0.507);
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  font-size: 1rem;
+  z-index: 2000;
+}
+
+
+.menu {
+  transform: rotate(-45deg);
+  background-image: linear-gradient(135deg, #2C5364 10%, rgb(137, 164, 173) 25%, rgba(255,255,255,0) 30%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 25%;
+  height: 25%;
+  position: fixed;
+  top: 25%;
+  right:-25%;
+  z-index: 2000;
+  font-size: 5vw;
+  animation-name: test-menu;
+  animation-duration: 3s;
+  display: flex;
+  transition: 200ms;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#menu-in{
+  transform: rotate(45deg);
+}
+.menu-anc{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* transform: rotate(45deg); */
+}
+
+.menu-hov{
+  /* border-color: green; */
+  width: 100%;
+}
+.menu-anc,.menu-li {
+  text-decoration: none;
+  color: rgba(99, 134, 127, 0.9);
+  animation-name: test-list;
+  animation-duration: 6s;
+  animation: ease-out;
+}
+
+.menu-li{
+  /* border-color: yellow; */
+  transition: 150ms;
+  display: inline;
+}
+.menu:hover{
+  right: 0px;
+  transition: 500ms;
+  background-image: linear-gradient(135deg, rgba(44, 83, 100, 0.171) 10%, rgba(137, 164, 173, 0.116) 25%, rgba(255,255,255,0) 30%);
+
+}
+
+
+.menu-hov:hover + .menu-li{
+  color: rgb(71, 114, 105);
+}
+
+.menu-li:hover{
+  color: pink;
+}
+
+
+
+@keyframes test-menu {
+  from,to {
+    right: -25%;
+  }
+  50% {
+    right: 0px;
+  }
+}
+
+
+
+/* 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+
+
+#first {
+  /* background: url("hot-air-ballons-828967_1920.jpg") no-repeat center center; */
+  /* background: rgb(238, 250, 221) no-repeat center center fixed; */
+  /* background-color: */
+
+  background: #00F260 no-repeat center center fixed;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #11998e82, #98CBB4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #11998e82, #98CBB4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 0px;
+  left: 0px;
+  animation: alternate;
+  animation-duration: 15s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-name: first;
+}
+
+@keyframes first {
+  from {
+    /* background: -webkit-linear-gradient(to top, #fffcdc, rgb(238, 250, 221));  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to top, #fffcdc, rgb(238, 250, 221)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  /* 50% {
+    background-color: #C9FEE3;
+  } */
+  to {
+    /* background: -webkit-linear-gradient(to top, #11998e, #98CBB4);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to top, #11998e, #98CBB4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+    /* background-color:  #98CBB4; */
+  }
+}
+
+#home-animation{
+  position: absolute;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  left: 0px;
+  top: 10%;
+  animation-duration: 6s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-name: home-anim;
+}
+
+
+@keyframes home-anim{
+  from,to{
+   top:   10%;
+   transform: rotate(-180deg);
+  }
+  50% {
+   top:   90%;
+   transform: rotate(180deg);
+  }
+}
+
+#home-content-list{
+  /* text-align: end; */
+  display: flex;
+  flex-direction: column;
+  font-size: calc(3.5vh+3vw);
+}
+
+#home-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content-header{
+  font-size: 3.5vh;
+  text-align: center;
+}
+#todo{
+  width: 40vmax;
+}
+.remove-button{
+  float: right;
+  margin-right:10px;
+  border-radius: 100%;
+  opacity: .3;
+}
+
+.todoli:hover .remove-button{
+  opacity: 1;
+}
+
+/* 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
+
+
+
+#second {
+  /* background: url("ancient-1226277_1920.jpg") center; */
+  background: #38ef7d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #38ef7d, #11998e82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #38ef7d, #11998e82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+/* #about-text{
+  font-size: 2vmax;
+  color: pink;
+  margin-top: 20px;
+  margin-right: 50%;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+} */
+
+.second{
+  font-size: 1.1vmax;
+  position: relative;
+  left: 2%;
+  color: rgb(142, 35, 195);
+  /* margin-top: 20px; */
+  margin-right: 40%;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-name: second-text;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.second-inner{
+  color: black;
+  font-weight: lighter;
+}
+.second-head{
+  font-weight: bold;
+}
+
+@keyframes second-text{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+#home-content-pic{
+  width: 10px;
+  height: 10px;
+  background:transparent;
+  position: absolute;
+  animation-name: home-content-pic;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  /* animation-direction: normal; */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  z-index: 200px;
+  left: 70%;
+  top: 10px;
+  
+}
+
+/* #second:hover > #home-content-pic{
+  animation-play-state: running;
+} */
+/* .menu-anc[href^="#second"]:active > #home-content-pic{
+  
+} */
+
+
+@keyframes home-content-pic{
+    0% { background-color: transparent;}
+    100% {  
+   
+        background: url("../media/mypic.jpg");
+        transform: rotate(-90deg);
+        border-radius: 33%;
+        background-size: cover;
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 10px;
+        animation: ease-in;
+        }
+    /* 100%{
+        animation: ease-in;
+        left: 0px; top:0px;
+    } */
+}
+
+
+
+
+
+
+
+/* 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+
+
+
+
+
+
+#third {
+  background: #38ef7d no-repeat center center fixed;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #114599d5, #38ef7d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,#114599d5, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+}
+
+#project-menu{
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1%;
+  border-bottom: 2px solid rgba(31, 128, 31, 0.8);
+}
+#project-menu>img{
+  opacity: 0.8; 
+  cursor: pointer; 
+  max-width: 30vh;
+  max-height: 20vh;
+}
+
+#project-menu>img:hover{
+  opacity: 1;
+}
+
+#project-content{
+
+  max-height: 70vh;
+  position: relative;
+  display: none;
+  margin-top: 1%;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-img{
+  position: relative;
+  max-width: 70vh;
+  height: auto;
+}
+
+#project-text {
+  position: absolute;
+  bottom: -35px;
+  left: 25%;
+  color: white;
+  font-size: 30px;
+}
+
+#project-video{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 */
+
+#fourth {
+  background: url('../media/20190401_192752-EFFECTS.jpg') center;
+  background-color: lightgray;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+}
+
+.contact{
+  font-size: 2vw;
+  color: whitesmoke;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-name: contact;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /* transition-delay: 1s; */
+  font-weight: lighter;
+}
+
+#email{
+  
+}
+
+@keyframes contact{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+

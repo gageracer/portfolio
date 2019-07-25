@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Can's Resumé</title>
+    <style>
+        /* *{
+            border: 1px solid red;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="./scripts/desktop.js"></script>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <script type="text/javascript" src="./scripts/todo.js"></script>
+    
+    <div id="first">
+        <button id="lang" onclick="changeLang()"></button>
+        
+        <div id="home-content">
+            <h1 id="home-content-header"></h1>
+            
+            <ul id="home-content-list">
+
+            </ul>
+        <div id="datee"></div>
+        <div id="date-counter"></div>
+        <div id="home-animation"></div>
+        <div id="test"></div>
+        <div id="todo">
+            <h2 id="first-name"></h2>
+            <input id="first-in" type="text" value="Herro" onkeypress="inp()">
+            <input type="text" placeholder="add something to todo list" id="todo-add">
+            <button id="todo-but" onclick="add(this.getAttribute('data-value'))" data-value="todo">Save</button>
+            <br>
+            <ul id="todo-list"></ul>
+        
+        </div>
+        
+        </div>
+
+        <ul class="menu">
+            <div id="menu-in">
+            <a class="menu-anc" href="#first">
+                <div class="menu-hov"></div>
+                <li class="menu-li">H</li>
+            </a>
+            <a class="menu-anc" id="second-menu" href="#second" onclick="secondPage()">
+                <div class="menu-hov"></div>
+                <li class="menu-li">G</li>
+            </a>
+            <a class="menu-anc" href="#third" onclick="thirdPage()">
+                <div class="menu-hov"></div>
+                <li class="menu-li">A</li>
+            </a>
+            <a class="menu-anc" href="#fourth" onclick="fourthPage()">
+                <div class="menu-hov"></div>
+                <li class="menu-li">C</li>
+            </a>
+        </div>
+        </ul>
+    </div>
+
+    <div id="second" onmouseenter="secondPage()">
+        <div id="home-content-pic"></div>
+        <div id="about-text" class="second"></div>
+        <div id="skills" class="second"></div>
+        <div id="exp" class="second"></div>
+    </div>
+
+    <div id="third">
+        <div id="project-menu">
+                <img src="media/screenshout.png" id="vidpic" alt="Co-Op Game Prototype Using Unity3D" onclick="pickpic(this);">
+                <img src="media/usecase.png" alt="Quest for Mentor - Mentorship Web App" onclick="pickpic(this);">
+                
+        </div>
+        <div id="project-content">
+                <!-- <image class="video-lightbox" src="media/screenshout.png" link="true" href="https://www.youtube.com/watch?v=TW7_9QDoRTw?rel=0&autoplay=1" lightbox_video="true"][lightbox selector=".video-lightbox"> -->
+                <iframe id="project-video" width="560" height="315" src="https://www.youtube.com/embed/TW7_9QDoRTw" frameborder="0" allowfullscreen></iframe>
+                <img id="project-img">
+                <div id="project-text"></div>
+        </div>
+
+    
+    </div>
+
+    <div id="fourth">
+        <a href="https://github.com/gageracer" class="contact" target="_blank">
+            <img src="media/icons8-git-96.png" alt="github">
+
+        </a>
+        <h1 id="email" class="contact">a</h1>
+        <h1 id="phone" class="contact">d</h1>
+    </div>
+
+    
+    <footer></footer>
+</body>
