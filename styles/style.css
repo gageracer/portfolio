@@ -35,10 +35,10 @@ html,body{
   transform: rotate(-45deg);
   background-image: linear-gradient(135deg, #2C5364 10%, rgb(137, 164, 173) 25%, rgba(255,255,255,0) 30%);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 25%;
-  height: 25%;
+  width: 22vw;
+  height: 22vw;
   position: fixed;
-  top: 25%;
+  top: 25vh;
   right:-25%;
   z-index: 2000;
   font-size: 5vw;
@@ -100,7 +100,7 @@ html,body{
     right: -25%;
   }
   50% {
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -417,7 +417,7 @@ html,body{
 }
 
 .contact{
-  font-size: 2vw;
+  font-size: 2vmax;
   color: whitesmoke;
   opacity: 0;
   animation-duration: 3s;
