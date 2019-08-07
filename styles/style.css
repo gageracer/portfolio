@@ -13,7 +13,7 @@ html,body{
 }
 #first,#second,#third,#fourth{
   min-width: auto;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #second,#third,#fourth{
@@ -38,10 +38,10 @@ html,body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: fixed;
     z-index: 50;
-    font-size: 5vw;
+    font-size: 5vmin;
     animation-name: test-menu;
     animation-duration: 3s;
-    width: 100vw;
+    width: 90vw;
     margin:0;
     bottom: 0%;
   }
@@ -55,7 +55,8 @@ html,body{
   }
   .menu-li{
     text-decoration: none;
-    color: rgb(71, 114, 105);
+    color: rgb(187, 186, 167);
+    text-shadow: 2px 2px 4px #000000;
   }
   
     
@@ -65,7 +66,7 @@ html,body{
   }
   .menu-anc{
     text-decoration: none;
-    border: 1px rgba(99, 134, 127, 0.9);;
+    border: 1px rgb(99, 134, 127);;
     border-style: ridge;
   }
   .menu-li{
@@ -272,6 +273,7 @@ html,body{
 }
 
 .second-flex{
+  height: 90vh;
   margin-top: 10px;
   flex-direction: column;
   justify-content: center;
@@ -294,7 +296,7 @@ html,body{
   left: 2%;
   color: rgb(142, 35, 195);
   /* margin-top: 20px; */
-  margin-right: 40%;
+  margin-right: 35%;
   opacity: 0;
   animation-duration: 3s;
   animation-delay: 2s;
