@@ -217,10 +217,15 @@ html,body{
   top: 0px;
   left: 0px;
   /* display: flex; */
+
+
+}
+
+.second-flex{
+  margin-top: 5vh;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
 }
 
 /* #about-text{
@@ -270,7 +275,7 @@ html,body{
   width: 10em;
   height: 10em;
   background:transparent;
-  position: fixed;
+  position: absolute;
   animation-name: home-content-pic;
   animation-duration: 5s;
   animation-delay: 1s;
@@ -295,7 +300,6 @@ html,body{
 @keyframes home-content-pic{
     0% { background-color: transparent;}
     100% {  
-        position: fixed;
         background: url("../media/mypic.jpg");
         transform: rotate(-90deg);
         border-radius: 33%;
@@ -366,8 +370,9 @@ html,body{
 }
 
 #project-img{
+  display: none;
   position: relative;
-  max-width: 70vh;
+  width: 50vw;
   height: auto;
 }
 
@@ -376,11 +381,13 @@ html,body{
   bottom: -35px;
   left: 25%;
   color: white;
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 #project-video{
   display: none;
+  width: 50vw;
+  height: 40vw;
 }
 
 

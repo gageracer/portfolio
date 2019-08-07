@@ -200,12 +200,13 @@ function pickpic(imgs){
         var imgText = document.getElementById("project-text");
     if(imgs.id == "vidpic"){
         document.getElementById("project-video").style.display = "block";
-        expandImg.src = "";
+        expandImg.style.display = "none";
         imgText.innerHTML = imgs.alt;
         expandImg.parentElement.style.display = "flex";
     }
     else{
         document.getElementById("project-video").style.display = "none";
+        expandImg.style.display = "inherit";
         expandImg.src = imgs.src;
         imgText.innerHTML = '<a href="https://gageracer.github.io/QFM/" target="_blank">'+ imgs.alt + '</a>';
         expandImg.parentElement.style.display = "flex";
