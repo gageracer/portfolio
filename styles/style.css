@@ -27,82 +27,132 @@ html,body{
   bottom: 0px;
   right: 0px;
   font-size: 1rem;
-  z-index: 2000;
+  z-index: 60;
 }
+/* This is for mobile */
+@media screen and (max-width:481px) {
 
-
-.menu {
-  transform: rotate(-45deg);
-  background-image: linear-gradient(135deg, #2C5364 10%, rgb(137, 164, 173) 25%, rgba(255,255,255,0) 30%);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 25vh;
-  right:-25%;
-  z-index: 2000;
-  font-size: 5vw;
-  animation-name: test-menu;
-  animation-duration: 3s;
-  display: flex;
-  transition: 200ms;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#menu-in{
-  transform: rotate(45deg);
-}
-.menu-anc{
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  /* transform: rotate(45deg); */
-}
-
-.menu-hov{
-  /* border-color: green; */
-  width: 100%;
-}
-.menu-anc,.menu-li {
-  text-decoration: none;
-  color: rgba(99, 134, 127, 0.9);
-  animation-name: test-list;
-  animation-duration: 6s;
-  animation: ease-out;
-}
-
-.menu-li{
-  /* border-color: yellow; */
-  transition: 150ms;
-  display: inline;
-}
-.menu:hover{
-  right: 0px;
-  transition: 500ms;
-  background-image: linear-gradient(135deg, rgba(44, 83, 100, 0.171) 10%, rgba(137, 164, 173, 0.116) 25%, rgba(255,255,255,0) 30%);
-
-}
-
-
-.menu-hov:hover + .menu-li{
-  color: rgb(71, 114, 105);
-}
-
-.menu-li:hover{
-  color: pink;
-}
-
-
-
-@keyframes test-menu {
-  from,to {
-    right: -25%;
+  .menu {
+    
+    background-color: rgba(99, 134, 127, 0.404);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    z-index: 50;
+    font-size: 5vw;
+    animation-name: test-menu;
+    animation-duration: 3s;
+    width: 100vw;
+    margin:0;
+    bottom: 0%;
   }
-  50% {
-    right: 0;
+  .menu-in{
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+  .menu-li{
+    text-decoration: none;
+    color: rgb(71, 114, 105);
+  }
+  
+    
+  .menu-hov{
+    /* border-color: green; */
+    display: none;
+  }
+  .menu-anc{
+    text-decoration: none;
+    border: 1px rgba(99, 134, 127, 0.9);;
+    border-style: ridge;
+  }
+  .menu-li{
+    /* border-color: yellow; */
+    text-decoration: none;
+    transition: 150ms;
+    display: inline;
+  }
+
+}
+/* This is for desktop */
+@media screen and (min-width:481px) {
+  .menu {
+    transform: rotate(-45deg);
+    background-image: linear-gradient(135deg, #2C5364 10%, rgb(137, 164, 173) 25%, rgba(255,255,255,0) 30%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 22vw;
+    height: 22vw;
+    position: fixed;
+    top: 25vh;
+    right:-25%;
+    z-index: 2000;
+    font-size: 5vw;
+    animation-name: test-menu;
+    animation-duration: 3s;
+    display: flex;
+    transition: 200ms;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #menu-in{
+    transform: rotate(45deg);
+  }
+  .menu-anc{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* transform: rotate(45deg); */
+  }
+
+  .menu-hov{
+    /* border-color: green; */
+    width: 100%;
+  }
+  .menu-anc,.menu-li {
+    text-decoration: none;
+    color: rgba(99, 134, 127, 0.9);
+    animation-name: test-list;
+    animation-duration: 6s;
+    animation: ease-out;
+  }
+
+  .menu-li{
+    /* border-color: yellow; */
+    transition: 150ms;
+    display: inline;
+  }
+  .menu:hover{
+    right: 0px;
+    transition: 500ms;
+    background-image: linear-gradient(135deg, rgba(44, 83, 100, 0.171) 10%, rgba(137, 164, 173, 0.116) 25%, rgba(255,255,255,0) 30%);
+
+  }
+
+
+  .menu-hov:hover + .menu-li{
+    color: rgb(71, 114, 105);
+  }
+
+  .menu-li:hover{
+    color: pink;
+  }
+
+
+
+  @keyframes test-menu {
+    from,to {
+      right: -25%;
+    }
+    50% {
+      right: 0;
+    }
   }
 }
+
 
 
 
@@ -222,7 +272,7 @@ html,body{
 }
 
 .second-flex{
-  margin-top: 5vh;
+  margin-top: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -272,8 +322,8 @@ html,body{
 
 
 #home-content-pic{
-  width: 10em;
-  height: 10em;
+  width: 25vmin;
+  height: 25vmin;
   background:transparent;
   position: absolute;
   animation-name: home-content-pic;
