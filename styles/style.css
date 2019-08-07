@@ -273,12 +273,12 @@ html,body{
 
 .second-flex{
   display: flex;
-  left: 2%;
-  width: 60vw;
+  width: 66vw;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* border: 2px blue solid; */
+  margin-left: 10px;
 }
 
 /* #about-text{
@@ -292,9 +292,8 @@ html,body{
 } */
 
 .second{
-  font-size: 1.6vmax;
-  position: relative;
-  left: 3%;
+  font-size: 1.5vmax;
+  position: relative; 
   color: rgb(142, 35, 195);
   /* margin-top: 20px; */
   opacity: 0;
@@ -337,7 +336,7 @@ html,body{
   animation-play-state: paused;
   z-index: 200px;
   left: 70%;
-  top: 15vmin;
+  top: 22vmin;
   
 }
 
