@@ -272,11 +272,12 @@ html,body{
 }
 
 .second-flex{
+  display: flex;
   left: 2%;
   width: 60vw;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* border: 2px blue solid; */
 }
 
@@ -291,8 +292,7 @@ html,body{
 } */
 
 .second{
-  font-size: 1.3vmax;
-
+  font-size: 1.6vmax;
   position: relative;
   left: 3%;
   color: rgb(142, 35, 195);
@@ -337,7 +337,7 @@ html,body{
   animation-play-state: paused;
   z-index: 200px;
   left: 70%;
-  top: 5vmin;
+  top: 15vmin;
   
 }
 
