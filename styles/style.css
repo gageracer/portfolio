@@ -262,7 +262,6 @@ html,body{
   background: #38ef7d;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #38ef7d, #11998e82);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #38ef7d, #11998e82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   background-size: cover;
   position: relative;
   top: 0px;
@@ -273,11 +272,12 @@ html,body{
 }
 
 .second-flex{
-  height: 90vh;
-  margin-top: 10px;
+  left: 2%;
+  width: 60vw;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  /* border: 2px blue solid; */
 }
 
 /* #about-text{
@@ -292,11 +292,11 @@ html,body{
 
 .second{
   font-size: 1.3vmax;
+
   position: relative;
-  left: 2%;
+  left: 3%;
   color: rgb(142, 35, 195);
   /* margin-top: 20px; */
-  margin-right: 35%;
   opacity: 0;
   animation-duration: 3s;
   animation-delay: 2s;
@@ -337,7 +337,7 @@ html,body{
   animation-play-state: paused;
   z-index: 200px;
   left: 70%;
-  top: 10vmin;
+  top: 5vmin;
   
 }
 
