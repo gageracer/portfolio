@@ -234,7 +234,7 @@ html,body{
 } */
 
 .second{
-  font-size: 1.1vmax;
+  font-size: 1.3vmax;
   position: relative;
   left: 2%;
   color: rgb(142, 35, 195);
@@ -267,10 +267,10 @@ html,body{
 
 
 #home-content-pic{
-  width: 10px;
-  height: 10px;
+  width: 10em;
+  height: 10em;
   background:transparent;
-  position: absolute;
+  position: fixed;
   animation-name: home-content-pic;
   animation-duration: 5s;
   animation-delay: 1s;
@@ -280,7 +280,7 @@ html,body{
   animation-play-state: paused;
   z-index: 200px;
   left: 70%;
-  top: 10px;
+  top: 10vmin;
   
 }
 
@@ -295,13 +295,13 @@ html,body{
 @keyframes home-content-pic{
     0% { background-color: transparent;}
     100% {  
-   
+        position: fixed;
         background: url("../media/mypic.jpg");
         transform: rotate(-90deg);
         border-radius: 33%;
         background-size: cover;
-        width: 20vh;
-        height: 20vh;
+        width: 25vmin;
+        height: 25vmin;
         margin-bottom: 10px;
         animation: ease-in;
         }
