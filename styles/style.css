@@ -45,38 +45,36 @@ html,body{
     margin:0;
     bottom: 0%;
   }
+
   .menu-in{
     margin: 0;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
   }
+
   .menu-li{
     text-decoration: none;
+    display: inline;
     color: rgb(187, 186, 167);
     text-shadow: 2px 2px 4px #000000;
   }
   
-    
   .menu-hov{
     /* border-color: green; */
     display: none;
   }
+
   .menu-anc{
     text-decoration: none;
     border: 1px rgb(99, 134, 127);;
     border-style: ridge;
   }
-  .menu-li{
-    /* border-color: yellow; */
-    text-decoration: none;
-    transition: 150ms;
-    display: inline;
-  }
+
 
 }
+
 /* This is for desktop */
 @media screen and (min-width:481px) {
   .menu {
@@ -212,12 +210,12 @@ html,body{
 
 @keyframes home-anim{
   from,to{
-   top:   10%;
-   transform: rotate(-180deg);
+  top:   10%;
+  transform: rotate(-180deg);
   }
   50% {
-   top:   90%;
-   transform: rotate(180deg);
+  top:   90%;
+  transform: rotate(180deg);
   }
 }
 
@@ -388,10 +386,12 @@ html,body{
   flex-direction: column;
   top: 0px;
   left: 0px;
+  justify-content: space-evenly;
 }
 
 #project-menu{
   height: 20%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -402,7 +402,7 @@ html,body{
 #project-menu>img{
   opacity: 0.8; 
   cursor: pointer; 
-  max-width: 30vh;
+  max-width: 25vh;
   max-height: 20vh;
 }
 
@@ -412,7 +412,7 @@ html,body{
 
 #project-content{
 
-  max-height: 70vh;
+  max-height: 60vh;
   position: relative;
   display: none;
   margin-top: 1%;
@@ -420,25 +420,41 @@ html,body{
   align-items: center;
 }
 
-#project-img{
-  display: none;
-  position: relative;
-  width: 50vw;
-  height: auto;
-}
-
 #project-text {
   position: absolute;
-  bottom: -35px;
-  left: 25%;
+  top: -5vmax;
+  text-align: center;
   color: white;
   font-size: 3vw;
 }
 
-#project-video{
-  display: none;
-  width: 50vw;
-  height: 40vw;
+
+/* This is for desktop */
+@media screen and (min-width:481px) {
+  
+    #project-video{
+    display: none;
+    width: 50vw;
+    height: 30vw;
+  }
+
+    #project-img{
+    display: none;
+    position: relative;
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/* This is for mobile */
+@media screen and (max-width:481px) {
+  
+  #project-img{
+    display: none;
+    position: relative;
+    width: 60vw;
+    height: auto;
+  }
 }
 
 
