@@ -347,7 +347,14 @@ html,body{
   z-index: 3;
 }
 #todo{
-  width: 40vmax;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  max-width: 20vw;
+  z-index: 5;
+}
+#todo-list{
+  width: 40vw;
   z-index: 5;
 }
 .remove-button{
