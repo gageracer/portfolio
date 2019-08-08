@@ -189,15 +189,15 @@ html,body{
 
   #home-anim-header{
     position: absolute;
-    height: 40vh;
-    width: 40vh;
+    height: 30vh;
+    width: 30vh;
     top: 25vh;
   }
     #home-anim-bar{
     position: absolute;
     width: 5vh;
-    height: 52vh;
-    left: 17.5vh;
+    height: 42vh;
+    left: 12.5vh;
     top: -6vh;
     animation: home-anim  infinite 60s linear;
     z-index: 1;
