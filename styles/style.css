@@ -14,6 +14,7 @@ html,body{
 #first,#second,#third,#fourth{
   min-width: auto;
   height: 100vh;
+  z-index: 3;
 }
 
 #second,#third,#fourth{
@@ -86,14 +87,19 @@ html,body{
     position: fixed;
     top: 25vh;
     right:-25%;
-    z-index: 2000;
+    z-index: 200;
     font-size: 5vw;
     animation-name: test-menu;
     animation-duration: 3s;
+    animation-delay: 2s;
     display: flex;
     transition: 200ms;
     flex-direction: column;
     justify-content: center;
+    opacity: 0.5;
+  }
+  .menu:hover{
+    opacity: 1;
   }
 
   #menu-in{
@@ -110,6 +116,7 @@ html,body{
   .menu-hov{
     /* border-color: green; */
     width: 100%;
+    
   }
   .menu-anc,.menu-li {
     text-decoration: none;
@@ -125,6 +132,7 @@ html,body{
     display: inline;
   }
   .menu:hover{
+    opacity: 1;
     right: 0px;
     transition: 500ms;
     background-image: linear-gradient(135deg, rgba(44, 83, 100, 0.171) 10%, rgba(137, 164, 173, 0.116) 25%, rgba(255,255,255,0) 30%);
@@ -134,10 +142,12 @@ html,body{
 
   .menu-hov:hover + .menu-li{
     color: rgb(71, 114, 105);
+    opacity: 1;
   }
 
   .menu-li:hover{
     color: pink;
+    opacity: 1;
   }
 
 
@@ -148,6 +158,9 @@ html,body{
     }
     50% {
       right: 0;
+    }
+    to{
+      opacity: 1;
     }
   }
 }
@@ -169,76 +182,173 @@ html,body{
 
   top: 0px;
   left: 0px;
-  animation: alternate;
-  animation-duration: 15s;
-  /* animation-delay: 2s; */
-  animation-iteration-count: infinite;
-  animation-name: first;
 }
 
-@keyframes first {
-  from {
-    /* background: -webkit-linear-gradient(to top, #fffcdc, rgb(238, 250, 221));  Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to top, #fffcdc, rgb(238, 250, 221)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  /* 50% {
-    background-color: #C9FEE3;
-  } */
-  to {
-    /* background: -webkit-linear-gradient(to top, #11998e, #98CBB4);  /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to top, #11998e, #98CBB4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
-    /* background-color:  #98CBB4; */
-  }
-}
+/* Mobile */
+@media screen and (max-width:481px){
 
-#home-animation{
+  #home-anim-header{
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    top: 25vh;
+  }
+    #home-anim-bar{
+    position: absolute;
+    width: 5vh;
+    height: 52vh;
+    left: 17.5vh;
+    top: -6vh;
+    animation: home-anim  infinite 60s linear;
+    z-index: 1;
+  }
+
+  #home-anim-sball{
+    position: absolute;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec2F4B, rgba(0, 157, 255, 0.849)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    animation: home-anim-ins  infinite 20s linear;
+    z-index: 1;
+  }
+  .home-bg-ball{
   position: absolute;
-  background: #009FFF;  /* fallback for old browsers */
+  background: rgba(0, 157, 255, 0.486);  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
-  left: 0px;
-  top: 10%;
-  animation-duration: 6s;
+  animation-duration: 60s;
   /* animation-delay: 2s; */
   animation-iteration-count: infinite;
-  animation-name: home-anim;
+  animation-name: home-back;
+  opacity: 0.5;
+  
+  
+  right: center;
+  width: 100%;
+  height: 100%;
+  
+  
+  z-index: 1;
+  }
+}
+/* Desktop */
+@media screen and (min-width:481px){
+
+
+  #home-anim-header{
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+    top: 25vh;
+  }
+    #home-anim-bar{
+    position: absolute;
+    width: 5vh;
+    height: 62vh;
+    left: 22.5vh;
+    top: -6vh;
+    animation: home-anim  infinite 60s linear;
+    z-index: 1;
+  }
+
+  #home-anim-sball{
+    position: absolute;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec2F4B, rgba(0, 157, 255, 0.849)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    animation: home-anim-ins  infinite 20s linear;
+    z-index: 1;
+  }
+  .home-bg-ball{
+  position: absolute;
+  background: rgba(0, 157, 255, 0.486);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  animation-duration: 60s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-name: home-back;
+  opacity: 0.5;
+  
+  
+  right: center;
+  width: 100%;
+  height: 100%;
+  
+  
+  z-index: 1;
+  }
 }
 
 
 @keyframes home-anim{
-  from,to{
-  top:   10%;
-  transform: rotate(-180deg);
-  }
-  50% {
-  top:   90%;
-  transform: rotate(180deg);
-  }
+  to{
+    /* top:   10%; */
+    transform: rotate(360deg);
+    }
+  
 }
 
+@keyframes home-anim-ins{
+  to{
+    /* top:   10%; */
+    transform: rotate(-360deg);
+    }
+  
+}
+
+
+
+@keyframes home-back{
+  to{
+  
+  transform: rotate(-360deg);
+  }
+  
+}
+
+@keyframes home-content{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 #home-content-list{
   /* text-align: end; */
   display: flex;
   flex-direction: column;
   font-size: calc(3.5vh+3vw);
+  z-index: 3;
 }
 
 #home-content{
+  animation: home-content forwards 3s 1s 1;
   display: flex;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 #home-content-header{
   font-size: 3.5vh;
   text-align: center;
+  z-index: 3;
 }
 #todo{
   width: 40vmax;
+  z-index: 5;
 }
 .remove-button{
   float: right;
@@ -251,6 +361,9 @@ html,body{
   opacity: 1;
 }
 
+#datee,#date-counter{
+  z-index: 2;
+}
 /* 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
 
 
@@ -488,7 +601,7 @@ html,body{
   color: whitesmoke;
   opacity: 0;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-name: contact;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -496,9 +609,6 @@ html,body{
   font-weight: lighter;
 }
 
-#email{
-  
-}
 
 @keyframes contact{
   from{
