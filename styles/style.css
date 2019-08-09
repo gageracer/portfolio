@@ -368,12 +368,13 @@ html,body{
   border-radius: 100%;
   opacity: .3;
 }
+
 #first-name{
   word-wrap: break-word;
-  width: 80vw;
+  width: 50vw;
   text-align: center;
-  
 }
+
 #first-in{
   max-width: 20vw;
 }
