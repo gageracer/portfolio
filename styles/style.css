@@ -376,7 +376,13 @@ html,body{
 }
 
 #first-in{
-  max-width: 20vw;
+  max-width: 22vw;
+}
+#todo-in{
+  max-width: 35vw;
+}
+#todo-but{
+  max-width: 12vw;
 }
 .todoli{
   word-wrap: break-word;
