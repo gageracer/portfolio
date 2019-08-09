@@ -371,7 +371,11 @@ html,body{
 #first-name{
   word-wrap: break-word;
   width: 80vw;
+  text-align: center;
   
+}
+#first-in{
+  max-width: 20vw;
 }
 .todoli{
   word-wrap: break-word;
