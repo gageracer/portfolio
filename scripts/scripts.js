@@ -140,7 +140,7 @@ var exp = [
 "Worked on Golang for the back-end side for the web sockets",
 "Worked on React libraries such as ReactXP, React Native Web for cross-platform app distribution",
 "Worked on React for the web app",
-"Working as an Android developer for the native mobile app using Kotlin"]
+"Worked as an Android developer for the native mobile app using Kotlin"]
 ];
 
 function secondPage(){
