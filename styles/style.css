@@ -422,7 +422,7 @@ html,body{
   justify-content: center;
   align-items: flex-start;
   /* border: 2px blue solid; */
-  margin-left: 10px;
+  margin-left: 1em;
 }
 
 /* #about-text{
@@ -436,7 +436,7 @@ html,body{
 } */
 
 .second{
-  font-size: 1.5vmax;
+  font-size: calc(1vmin+1em);
   position: relative; 
   color: rgb(142, 35, 195);
   /* margin-top: 20px; */
