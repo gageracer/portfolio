@@ -123,7 +123,7 @@ window.onload = function generateSite(){
 
 // Second Page stuff
 
-var aboutText = ["Highly adaptable with programming languages and their concepts, operating systems and platforms. A hard worker and collaborative individual with great people skills. Seeking a new position as a full stack developer with a company in the software industry.",
+var aboutText = ["An enthusiastic, proactive and versatile computer engineer. Passionate with new technologies that help society. Highly interested in modern software development, such as full-stack development. Great being part of and leading a team with excellent problem-solving skills.",
 
 "Programlama dilleri ve kavramları, işletim sistemleri ve platformlarıyla uyum sağlaması çok yüksek. Çok iyi insan becerisine sahip çalışkan ve işbirlikçi birey.Yazılım endüstrisindeki bir şirketle full-stack geliştirici olarak yeni bir pozisyon arıyor."];
 
@@ -136,7 +136,7 @@ var skills = [ ["Operating Systems: ","GNU/Linux, Microsoft Windows,MacOS"],
 
 var exp_head = ["Experience","Tecrübelerim"];
 var exp = [
-    ["Vinple, Vancouver - Full Stack Developer \nMarch 2019 - Present",
+    ["Vinple, Vancouver - Full Stack Developer \nMarch 2019 - July 2019",
 "Worked on Golang for the back-end side for the web sockets",
 "Worked on React libraries such as ReactXP, React Native Web for cross-platform app distribution",
 "Worked on React for the web app",
