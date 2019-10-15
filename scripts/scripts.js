@@ -218,7 +218,7 @@ function pickpic(imgs){
 
 // Fourth Page Stuff
 
-var contactText = ["Email: canaygin56@gmail.com","Mobile: (236) 777-34-91"]
+var contactText = ["Email: canaygin56@gmail.com",""]
 
 function fourthPage(){
     secondPage();
